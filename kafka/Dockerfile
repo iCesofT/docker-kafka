@@ -1,13 +1,12 @@
 # Kafka and Zookeeper
-
-FROM java:openjdk-8-jre
+FROM openjdk:8-jre
 
 MAINTAINER Francisco Javier Ahijado (https://github.com/iCesofT)
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV KAFKA_MIRROR http://www-eu.apache.org/dist/kafka
 ENV SCALA_VERSION 2.11
-ENV KAFKA_VERSION 0.10.2.1
+ENV KAFKA_VERSION 0.11.0.2
 ENV KAFKA_HOME /opt/kafka_"$SCALA_VERSION"-"$KAFKA_VERSION"
 
 # Install Kafka, Zookeeper and other needed things
