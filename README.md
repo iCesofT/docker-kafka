@@ -19,7 +19,7 @@ Run
 ---
 
 ```bash
-docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip \`docker-machine active\`` --env ADVERTISED_PORT=9092 spotify/kafka
+docker run -p 2181:2181 -p 9092:9092 --env ADVERTISED_HOST=`docker-machine ip \`docker-machine active\`` --env ADVERTISED_PORT=9092 fjahijado/kafka
 ```
 
 ```bash
@@ -54,7 +54,7 @@ docker run -p 2181:2181 -p 9092:9092 \
 
 In the box
 ---
-* **spotify/kafka**
+* **fjahijado/kafka**
 
   The docker image with both Kafka and Zookeeper. Built from the `kafka`
   directory.
@@ -67,14 +67,14 @@ In the box
 Public Builds
 ---
 
-https://registry.hub.docker.com/u/spotify/kafka/
+https://registry.hub.docker.com/u/fjahijado/kafka/
 
 https://registry.hub.docker.com/u/spotify/kafkaproxy/
 
 Build from Source
 ---
 
-    docker build -t spotify/kafka kafka/
+    docker build -t fjahijado/kafka kafka/
     docker build -t spotify/kafkaproxy kafkaproxy/
 
 Todo
